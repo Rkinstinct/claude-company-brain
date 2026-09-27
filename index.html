@@ -1,0 +1,118 @@
+<!doctype html><html lang="he" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Company Brain עם Claude - מדריך מעשי בעברית"><title>Company Brain עם Claude</title><style>
+:root{--bg:#f5f3ee;--paper:#fffefa;--ink:#202431;--muted:#5d6370;--line:#deddd6;--accent:#e45737;--accent-ink:#a83a23;--navy:#233557;--blue:#5276ac;font-family:Arial,"Noto Sans Hebrew",sans-serif;color:var(--ink)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;overflow-x:hidden}body{margin:0;overflow-x:hidden;background:var(--bg);line-height:1.75}a{color:var(--accent-ink)}a:focus-visible,summary:focus-visible{outline:3px solid var(--blue);outline-offset:3px}.wrap{width:calc(100% - 32px);max-width:1120px;margin-inline:auto;min-width:0}.skip{position:absolute;top:-120px;right:10px;background:#fff;padding:10px}.skip:focus{top:10px;z-index:10}.top{position:sticky;top:0;z-index:5;background:#fffefaee;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.top .wrap{display:flex;align-items:center;justify-content:space-between;min-height:72px;gap:20px}.brand{font-weight:900;font-size:1.08rem;letter-spacing:-.025em;color:var(--ink);text-decoration:none;white-space:nowrap}.brand span{color:var(--accent)}nav{display:flex;align-items:center;gap:6px;overflow:auto;scrollbar-width:none}nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;text-decoration:none;color:var(--ink);font-size:.87rem;font-weight:700;white-space:nowrap;border-radius:40px}nav a:hover{background:#f2e6dc}.hero{background:linear-gradient(133deg,#f8f3e7 0%,#fffefa 48%,#e8eff3 100%);border-bottom:1px solid var(--line);padding:88px 0 78px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:380px;height:380px;border:1px solid #dfc5b4;border-radius:50%;left:-130px;top:-160px;box-shadow:0 0 0 60px #efe9db88,0 0 0 125px #f3eee744;pointer-events:none}.hero .wrap{position:relative;z-index:1}.eyebrow,.section-tag,.category{font-size:.75rem;font-weight:900;letter-spacing:.06em;color:var(--accent-ink)}.hero h1{font-size:clamp(2.5rem,6.5vw,5.2rem);font-weight:900;line-height:1.1;letter-spacing:-.055em;margin:18px 0 22px;max-width:840px}.hero p{font-size:clamp(1.08rem,2vw,1.36rem);line-height:1.65;max-width:660px;color:var(--muted);margin:0 0 28px}.pills{display:flex;gap:9px;flex-wrap:wrap}.pill{border-radius:100px;padding:6px 13px;background:#fffefa;border:1px solid #e5dacf;font-size:.8rem;color:var(--navy);font-weight:700}.intro{padding-top:38px}.notice{background:#fdf5e8;border:1px solid #ecdac3;border-radius:12px;padding:16px 20px;color:#635545;font-size:.91rem}.notice strong{color:#3c3328}main section{padding:88px 0;border-bottom:1px solid var(--line);scroll-margin-top:82px}.section-head{display:block;margin-bottom:32px}.section-head h2{font-size:clamp(2rem,4vw,3.2rem);line-height:1.12;letter-spacing:-.04em;margin:9px 0 14px}.section-head p{max-width:680px;color:var(--muted);font-size:1.05rem;margin:0}.archive{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:start}.entry{min-width:0;background:var(--paper);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 5px 18px #20243108;transition:transform .2s,box-shadow .2s}.entry:hover{box-shadow:0 12px 24px #20243112}.entry:first-child{grid-column:1/-1;border-top:5px solid var(--accent)}.entry summary{list-style:none;cursor:pointer;padding:25px 27px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-weight:850;line-height:1.4;font-size:1.22rem;min-height:100px;overflow-wrap:anywhere}.entry summary::-webkit-details-marker{display:none}.entry summary:after{content:"+";order:5;margin-inline-start:auto;border-radius:50%;border:1px solid var(--line);width:32px;height:32px;text-align:center;line-height:27px;font-size:1.3rem;color:var(--accent-ink);flex:none}.entry[open] summary:after{content:"−"}.entry[open] summary{border-bottom:1px solid var(--line)}.entry .count{font-size:.75rem;color:var(--muted);font-weight:500;display:block;flex-basis:100%;order:4}.entry .body{padding:24px 27px 30px;min-width:0;overflow-wrap:anywhere;max-width:100%}.entry .body p{margin:0 0 16px;font-size:.98rem;line-height:1.9;white-space:pre-wrap;color:#424854}.entry .body a{overflow-wrap:anywhere;text-decoration-thickness:1px;text-underline-offset:3px}.entry pre{display:block;max-width:100%;overflow-x:auto;background:#1f2d44;color:#fff;padding:18px;border-radius:10px;font-size:.82rem;line-height:1.7;white-space:pre;direction:ltr;text-align:left}.card{background:var(--paper);border-radius:16px;padding:30px;border:1px solid var(--line)}.empty{max-width:760px}.empty h3{font-size:1.4rem;margin:9px 0}.empty p{color:var(--muted);margin:0}footer{background:#263553;color:#e9e9ec;padding:48px 0;font-size:.82rem}footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:700px){.top .wrap{display:block;padding-top:11px}.brand{display:block;margin-bottom:4px}nav{margin-inline:-8px;gap:0}nav a{font-size:.8rem;padding:0 11px}.hero{padding:57px 0 52px}.hero:after{width:220px;height:220px;left:-125px;top:-75px;box-shadow:0 0 0 40px #efe9db88}.hero h1{font-size:clamp(2.32rem,11vw,3.6rem)}.hero p{font-size:1.04rem}.intro{padding-top:24px}main section{padding:62px 0;scroll-margin-top:120px}.archive{grid-template-columns:minmax(0,1fr);gap:12px}.entry:first-child{grid-column:auto}.entry summary{font-size:1.08rem;padding:20px;min-height:88px}.entry .body{padding:20px}.entry pre{font-size:.76rem}.section-head{margin-bottom:23px}}
+</style><style>.feature{position:relative;padding:36px 42px;margin-bottom:24px;border-radius:18px;background:#263553;color:#fff;overflow:hidden}.feature:after{content:"27";position:absolute;left:22px;top:-80px;font:900 13rem/1 Arial,sans-serif;color:#ffffff12;pointer-events:none}.feature>*{position:relative;z-index:1}.feature-mark{font-size:.74rem;font-weight:900;letter-spacing:.04em;color:#f2c1a6}.feature h3{font-size:clamp(1.65rem,3vw,2.5rem);line-height:1.2;letter-spacing:-.035em;margin:11px 0}.feature p{font-size:1rem;max-width:640px;color:#e1e5ed;line-height:1.8;margin:0 0 22px}.feature a{display:inline-flex;align-items:center;gap:12px;background:#fff;color:#263553;text-decoration:none;font-weight:850;border-radius:6px;padding:12px 18px;min-height:48px}.feature a:hover{background:#f7e9db}@media(max-width:700px){.feature{padding:28px 24px}.feature:after{font-size:9rem;top:-35px;left:-5px}}</style><style>.guide{max-width:900px;padding-block:48px 90px}.guide>h2{border-top:1px solid var(--line);padding-top:33px}.guide>h2:first-of-type{border:0;padding-top:0}.guide>p:first-of-type{font-size:1.1rem}.guide table{font-size:.9rem}.guide code:not(pre code){font-size:.94em}.guide h2{font-size:clamp(1.5rem,4vw,2.1rem);margin:46px 0 16px;scroll-margin-top:110px}.guide h3{font-size:1.16rem;margin:30px 0 12px}.guide p,.guide li{font-size:1.02rem;line-height:1.9;color:var(--muted)}.guide strong{color:var(--ink)}.guide ul,.guide ol{padding-inline-start:24px}.guide li{margin-bottom:10px}.guide pre{direction:ltr;text-align:left;overflow-x:auto;background:#263553;color:#e9f4f6;border:1px solid var(--line);padding:16px;border-radius:10px;font-size:.86rem;line-height:1.6;max-width:100%}.guide code:not(pre code){direction:ltr;unicode-bidi:isolate;color:var(--accent);overflow-wrap:anywhere}.guide blockquote{margin:20px 0;padding:12px 20px;background:var(--paper);border-right:3px solid var(--accent);border-radius:7px}.guide blockquote p{margin:0}.guide a{overflow-wrap:anywhere}.guide table{border-collapse:collapse;width:100%;display:block;overflow:auto}.guide th,.guide td{border:1px solid var(--line);padding:10px;text-align:right}.guide th{background:#f2e9df}.guide hr{border:0;border-top:1px solid var(--line);margin:36px 0}.guide .toc{background:var(--paper);padding:18px 22px;border-radius:12px}.guide .toc a{display:inline-block;margin:4px 10px}</style></head><body><a class="skip" href="#main">לתוכן</a><header class="top"><div class="wrap"><a class="brand" href="#top">DATA<span>&</span>AI / מדריכים</a><nav aria-label="ניווט ראשי"><a href="#start">מתחילים</a><a href="#steps">השלבים</a><a href="#sources">מקורות</a></nav></div></header><div id="top" class="hero"><div class="wrap"><div class="eyebrow">מדריך מעשי · ספטמבר 2026</div><h1>Company Brain עם Claude</h1><p>בונים מאגר ידע ארגוני קטן, בלי לתת ל-Claude גישה לכל הארגון.</p></div></div><main id="main" class="wrap guide"><p><span id="start"></span></p>
+<h2 id="company-brain">מהו Company Brain בפועל</h2>
+<p>לא "מוח" אחד שיודע הכל, אלא שירות חיפוש ותשובות שמחזיר מידע מאושר עם מקור, תאריך והרשאות. מתחילים בתחום מצומצם, למשל נהלי BI שפורסמו לכל הצוות. Claude יכול לעזור לכתוב את צינור העבודה ולנסח תשובות, אבל <strong>אינו שואב את כל המידע מהארגון בעצמו</strong>. כל מקור דורש בעלים, דרך קריאה מורשית, מפת הרשאות, החלטת שמירה ורענון.</p>
+<blockquote>
+<p>האתר הזה ציבורי ומכיל הדרכה בלבד. אל תעלו אליו מסמכי חברה, URLs פנימיים, רשימות עובדים, מפתחות, דוגמאות מתוך דוחות פרטיים או פלט משיחות פנימיות. צוות אבטחה חייב לאשר כל חיבור אמיתי. התחילו רק בנתונים דמיוניים או ציבוריים.</p>
+</blockquote>
+<h2 id="_1">מאיפה בדיוק שואבים את הדאטה?</h2>
+<table>
+<thead>
+<tr>
+<th>מקור</th>
+<th>דרך טכנית התחלתית</th>
+<th>מה לבקש מהבעלים</th>
+<th>בעיית הרשאות</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>נהלים ו-FAQ מאושרים</td>
+<td>ייצוא <code>.txt</code>/<code>.md</code> לתיקייה מקומית או API של מאגר מסמכים</td>
+<td>מי מאשר גרסה ומה תאריך הרענון</td>
+<td>המשתמשים לא בהכרח רשאים לראות כל מסמך</td>
+</tr>
+<tr>
+<td>SharePoint / OneDrive / Drive</td>
+<td>API רשמי בחשבון שירות מוגבל, או ייצוא ייעודי מאושר</td>
+<td>הרשאות קריאה לתיקייה ספציפית בלבד</td>
+<td>לשמר ACL לכל קובץ, לא רק הרשאת הסורק</td>
+</tr>
+<tr>
+<td>כרטיסי Jira / Linear / מערכת קריאות</td>
+<td>API רשמי עם סינון פרויקט, סטטוס ותגי סודיות</td>
+<td>איזה פרויקט ושדות מותרים</td>
+<td>הערות וקבצים מצורפים עלולים להיות מוגבלים</td>
+</tr>
+<tr>
+<td>SQL / Power BI semantic model</td>
+<td>שאילתות מאושרות, read-only, על טבלאות/מדדים נבחרים</td>
+<td>מילון מדדים, בעלות ו-RLS</td>
+<td>לא לעקוף RLS באמצעות חשבון שירות רחב</td>
+</tr>
+<tr>
+<td>Slack / Teams / מייל</td>
+<td>רק אם יש צורך מוכח, הסכמה וגבולות שימור</td>
+<td>ערוצים ותאריכים מדויקים</td>
+<td>הודעות אישיות, PII ומידע צד שלישי דורשים בדיקה נפרדת</td>
+</tr>
+</tbody>
+</table>
+<p>המסלול הראשון למתחילים אינו connector למערכות חיות: בעל המידע מייצא <strong>5 מסמכים מותרים</strong> ל-<code>data/approved/</code>, עם <code>source_id</code>, בעלים, תאריך ועדכון. Claude Code קורא רק תיקייה שהרשיתם לו. לחיבור ישיר של Claude Code למערכות משתמשים ב-<a href="https://code.claude.com/docs/en/mcp">MCP</a> או בכלים מותאמים, אך connector מקבל את הרשאות המשתמש/הטוקן שלו; עצם החיבור אינו מאשר העברת תוכן לספק או פרסום. בדקו כל connector ואת <a href="https://code.claude.com/docs/en/permissions">הרשאות Claude Code</a> לפני שימוש.</p>
+<p><span id="steps"></span></p>
+<h2 id="1">שלב 1: בוחרים מקרה שימוש קטן</h2>
+<p>הגדירו 10 שאלות אמיתיות שהצוות שואל על נוהל ציבורי בצוות, למשל "מי מאשר שינוי במודל?" ו-"מתי מעדכנים gateway?". רשמו לצד כל תשובה קובץ ומקום בטקסט. הוסיפו חמש שאלות שהתשובה אליהן <strong>אינה</strong> במסמכים. זה הסט שאיתו תבדקו את המערכת, לפני שמחברים דאטה.</p>
+<h2 id="2">שלב 2: אוספים ומסדרים קבצים מורשים</h2>
+<p>צרו מבנה מקומי. קובצי הדוגמה ב-<code>data/approved</code> הם פיקטיביים:</p>
+<pre><code class="language-text">company-brain/
+  data/approved/bi-policy.txt
+  data/approved/gateway-faq.txt
+  manifest.csv
+  app.py
+</code></pre>
+<p><code>manifest.csv</code> הוא רישום שהשרת יוצר <strong>מתוך מידע אמיתי שאומת מול בעל המקור</strong>, לא הוראות קסם ל-Claude:</p>
+<pre><code class="language-csv">source_id,path,owner,classification,updated_at,allowed_group
+bi-policy,data/approved/bi-policy.txt,BI-team,internal-demo,2026-09-27,bi-readers
+gateway-faq,data/approved/gateway-faq.txt,BI-team,internal-demo,2026-09-27,bi-readers
+</code></pre>
+<p>אל תעלו את <code>data/</code>, <code>manifest.csv</code> הארגוני או <code>.env</code> למאגר ציבורי. דוגמה ללולאה מקומית שקוראת רק קבצים שמופיעים ברישום:</p>
+<pre><code class="language-python">import csv
+from pathlib import Path
+
+ROOT = Path(&quot;data/approved&quot;).resolve()
+with open(&quot;manifest.csv&quot;, encoding=&quot;utf-8&quot;, newline=&quot;&quot;) as f:
+    entries = list(csv.DictReader(f))
+
+for e in entries:
+    path = Path(e[&quot;path&quot;]).resolve()
+    if not path.is_relative_to(ROOT) or path.suffix != &quot;.txt&quot;:
+        raise ValueError(&quot;מקור מחוץ לתיקייה המותרת&quot;)
+    text = path.read_text(encoding=&quot;utf-8&quot;)
+    print(e[&quot;source_id&quot;], len(text))  # לא מדפיסים את תוכן המסמך
+</code></pre>
+<h2 id="3">שלב 3: מכינים חיפוש עם מקור</h2>
+<p>בשלב ראשון אפשר להשתמש בחיפוש מילים פשוט מתוך <a href="https://rkinstinct.github.io/claude-rag-graphrag/">מדריך RAG</a> (עם נתוני דוגמה בלבד). כל מקטע צריך <code>source_id</code>, גרסה/תאריך, בעלים ו-<code>allowed_group</code>. כשהשאלה מגיעה:</p>
+<ol>
+<li>אמתו את זהות השואל ואת הקבוצות שלו במערכת ההזדהות שלכם.</li>
+<li>סננו תחילה מקורות לפי הקבוצות. <strong>לא מחפשים במאגר הכללי ואז מבקשים מ-Claude להסתיר תוצאות אסורות.</strong></li>
+<li>מצאו עד חמישה מקטעים רלוונטיים, עם מזהי מקור, והעבירו רק אותם ל-Claude API. הוא עונה בעברית עם מקור, או "לא נמצא מידע מורשה".</li>
+<li>בדקו בשרת שהציטוט מצביע למקטע שנשלף ושקישור המקור נוצר רק מה-<code>manifest</code> המהימן. תשובת המודל אינה מקור סמכות.</li>
+</ol>
+<p>למסמכים רבים אפשר לעבור לאינדקס וקטורי כמו <a href="https://docs.trychroma.com/docs/overview/getting-started">Chroma</a>, אבל embeddings עשויים לשלוח תוכן לספק אחר: <a href="https://docs.anthropic.com/en/docs/build-with-claude/embeddings">Anthropic מתעדת שאין לה מודל embedding משלה</a>. אל תדלגו על סקירת פרטיות וספקים. אם רוצים "Company Brain" שרץ on-prem, בחרו רכיבי אחסון ו-embedding מאושרים מקומית ובדקו האם מותר לשלוח מקטעים ל-Claude API; אם לא, Claude החיצוני אינו מסלול מאושר להפעלה.</p>
+<h2 id="4-claude-code">שלב 4: איך עובדים <em>עם</em> Claude Code</h2>
+<p>פתחו את התיקייה המקומית בטרמינל והפעילו <code>claude</code> לאחר התקנה והתחברות לפי <a href="https://code.claude.com/docs/en/quickstart">ה-Quickstart</a>. תנו לו תחום עבודה וקו עצירה ברורים:</p>
+<blockquote>
+<p>"עבוד רק על <code>app.py</code> וקובצי דוגמה פיקטיביים. קרא את <code>manifest.csv</code> ו-<code>data/approved</code> בלבד. בנה חיפוש עם סינון <code>allowed_group</code> לפני retrieval. אל תתחבר לרשת או למערכות ארגוניות, אל תציג תוכן במסוף, אל תשמור סודות ב-Git. כתוב בדיקות לשאלה מורשית, לשאלה ללא תשובה ולמשתמש ללא הרשאה. הראה diff ועצור לפני כל פעולה שמשנה חיבור או שולחת מידע."</p>
+</blockquote>
+<p>זו הוראה לפיתוח מבוקר, <strong>לא בקרת גישה בפועל</strong>. הגדירו הרשאות כלי ומערכת קבצים מחוץ לפרומפט; כל הרשאה אמיתית נאכפת בשרת שלכם ובמערכת המקור. Claude Code יכול גם להתחבר ל-MCP; השתמשו ב-<code>claude mcp list</code> כדי לראות חיבורים וב-<code>/permissions</code> לסקור אותם. בלי הרשאה או connector ייעודי הוא לא רואה את SharePoint, SQL או מערכות הקריאות שלכם.</p>
+<h2 id="5">שלב 5: בדיקות לפני הרחבה</h2>
+<ul>
+<li>הריצו את 15 שאלות הבדיקה, חשבו כמה תשובות נשענות על מקור נכון וכמה פעמים הוא אומר "לא יודע" במקום להמציא.</li>
+<li>בדקו את אותה שאלה כמשתמש מורשה וכמשתמש לא מורשה. לא מספיק שהתשובה חסומה: גם רשימת תוצאות, קישורים ו-snippets חייבים להיות חסומים.</li>
+<li>בדקו מחיקת מסמך: רענון יומי/שבועי אינו מספיק אם תוכן נמחק או ההרשאה נשללת. נדרש מחיקה מהאינדקס ומזיכרונות ביניים בזמן שמוגדר במדיניות.</li>
+<li>רשמו <code>source_id</code>, גרסת מסמך, זמן אינדוקס, מזהה השואל ותוצאת בדיקת הרשאות בלי להעתיק תוכן רגיש ללוגים.</li>
+<li>רק אחר כך עברו למקור הבא. הרחיבו בהדרגה לפי בעל מידע, פרויקט והרשאה ולא לפי "כל הדאטה של החברה".</li>
+</ul>
+<h2 id="_2">שאלות שכדאי לשאול את בעל המידע</h2>
+<p>מי הבעלים? איזו תיקייה/טבלה/פרויקט מותר? למי מותר לראות? מה רמת הסיווג? מתי הנתונים מתעדכנים? מה קורה במחיקה? האם מותר לשלוח טקסט ל-Anthropic או לספק embedding חיצוני? מה מגבלת העלות? תשובות אלה קובעות את התכנון; פרומפט מוצלח אינו מחליף אותן.</p>
+<p><span id="sources"></span></p>
+<h2 id="_3">מקורות וגבולות</h2>
+<ul>
+<li><a href="https://code.claude.com/docs/en/mcp">Claude Code: MCP</a>, <a href="https://code.claude.com/docs/en/permissions">הרשאות</a>, <a href="https://code.claude.com/docs/en/quickstart">Quickstart</a>: החיבורים, הרשאות כלי והגדרת סביבת עבודה.</li>
+<li><a href="https://docs.anthropic.com/en/docs/build-with-claude/embeddings">Anthropic: Embeddings</a>, <a href="https://docs.anthropic.com/en/docs/build-with-claude/tool-use">Tool use</a>, <a href="https://docs.anthropic.com/en/docs/build-with-claude/files">Files API</a>: מה Claude API עושה, איפה הקבצים נשמרים ומגבלות הגישה.</li>
+<li><a href="https://docs.trychroma.com/docs/overview/getting-started">Chroma Getting Started</a>: מסד מקטעים וחיפוש.</li>
+</ul>
+<p>הדוגמה היא תכנון לימודי. אין כאן חיבור חי למערכות של המשתמש, הרצת קוד עם מפתחות, בדיקת RLS, או הרשאה להעביר דאטה ארגוני לספק חיצוני. גם הקוד וגם תשתית האבטחה דורשים בדיקת סביבה ארגונית לפני שימוש אמיתי.</p></main><footer><div class="wrap"><span>DATA&AI · מדריך למתחילים</span><span>עודכן: 27.9.2026 · הדגמה על נתונים מאושרים בלבד</span></div></footer></body></html>
